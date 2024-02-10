@@ -33,7 +33,6 @@ public class ArrayListExample {
         }
 
 
-        System.out.println(list);
 
 
         for (int i = 0; i < 5; i++) {
