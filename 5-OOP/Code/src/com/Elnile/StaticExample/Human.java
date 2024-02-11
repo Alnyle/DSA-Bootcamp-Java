@@ -15,6 +15,11 @@ public class Human {
       */
     static long population;
 
+    static void message() {
+        System.out.println("Hello world");
+       // System.out.println(this.age); // can not use this over here
+    }
+
     public Human(int age, String name, int salary, boolean married) {
         this.age = age;
         this.name = name;
