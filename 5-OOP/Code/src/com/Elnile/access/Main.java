@@ -5,6 +5,7 @@ public class Main {
         A obj = new A(3, "John Doe");
 
         System.out.println(obj.getNum());
+        Object object = new Object();
 
     }
 }
