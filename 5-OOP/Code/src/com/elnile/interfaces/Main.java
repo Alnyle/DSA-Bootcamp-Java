@@ -6,7 +6,7 @@ public class Main {
 
         // determine what function to run during runtime
         // function of interface should not have implementation
-        // member have to static and final
+        // member variables have to b static and final
         // can create object of interface
         // important: don't use interfaces to performing (critical) important code because it's resolve during runtime
 
@@ -23,7 +23,7 @@ public class Main {
 
         car.start();
         car.startMusic();
-        car.upgradeEngine();
+
         car.start();
 
     }

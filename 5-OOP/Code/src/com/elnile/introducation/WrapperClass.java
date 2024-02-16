@@ -12,7 +12,7 @@ public class WrapperClass {
         System.out.println(a + " " + b);
 
         // final: like const it will make sure your variable will not change
-        // Note: final variable always initialize while declaring
+        // Note: final variable always initialize it while declaring
         final int n = 122;
 
         final A Ahmed = new A("Ahmed Elniel");
