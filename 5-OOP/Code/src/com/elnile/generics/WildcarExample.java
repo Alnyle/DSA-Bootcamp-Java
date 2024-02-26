@@ -3,7 +3,8 @@ package com.elnile.generics;
 import java.util.Arrays;
 import java.util.List;
 
-public class WildcarExample<T> {
+// here T should either be Number or it's subclass
+public class WildcarExample<T extends Number> {
 
     private Object[] data;
     private static int DEFAULT_SIZE = 10;
@@ -47,17 +48,17 @@ public class WildcarExample<T> {
 
     public T remove() {
 
-        if(this.isEmpty()) {
-            return (T)"";
-        }
+//        if(this.isEmpty()) {
+//            return (T)0;
+//        }
         T removedItem = (T)this.data[--this.size];
         return removedItem;
     }
 
     public T get(int index) {
-        if (this.isEmpty()) {
-            return (T)"";
-        }
+//        if (this.isEmpty()) {
+//            return ;
+//        }
         return (T)data[index];
     }
 
@@ -96,5 +97,7 @@ public class WildcarExample<T> {
             list.add(2 * i);
         }
         System.out.println(list);
+
+        WildcarExample<Number> list3 = new WildcarExample<>();
     }
 }
