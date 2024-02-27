@@ -9,12 +9,18 @@ public class Student implements Comparable<Student> {
         this.marks = marks;
     }
 
-//    @Override
-//    public int compareTo(Student otherStudent) {
-//        int diff = (int)(this.marks - otherStudent.marks);
-//
-//        // if diff == 0: means both are equal
-//        // if diff < 0: means otherStudent is bigger else otherStudent is smaller
-//        return diff;
-//    }
+    @Override
+    public String toString() {
+        return marks + "";
+    }
+
+    @Override
+    public int compareTo(Student otherStudent) {
+        System.out.println("Compare function is running");
+        int diff = (int)(this.marks - otherStudent.marks);
+
+        // if diff == 0: means both are equal
+        // if diff < 0: means otherStudent is bigger else otherStudent is smaller
+        return diff;
+    }
 }
